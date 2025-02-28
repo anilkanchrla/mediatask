@@ -1,0 +1,129 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;
+}
+#navlinks{
+    display: flex;
+    gap: 30px;
+}
+#img{
+    width: 100%;
+}
+#img > img{
+    width: 100%;
+}
+
+@media(max-width:450px){
+    #navbar >#navlinks{
+        display: none;
+    }
+    #navlinks >p{
+        font-size: 1.3rem;
+    }
+    #project{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        padding: 10px;
+    
+    }
+    #project > #con{
+        position: relative; 
+        width: 100%;
+    }
+    #con >img{
+        width: 100%;
+    }
+    #con >span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 5px 5px;
+        background-color: black;
+        color: white;
+    }
+}
+
+
+ @media(min-width:451px) and (max-width:768px){
+    #navbar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #navlinks{
+        display: flex;
+        gap: 30px;
+    }
+    #navlinks >p{
+        font-size: 1.6rem;
+    }
+    #project{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+    #project >#con{
+        width: 100%;
+        position: relative;
+    }
+    #con >img{
+        width: 100%;
+    }
+    #con >span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 5px 9px;
+        background-color: black;
+        color: white;
+    }
+}
+
+
+@media(min-width:769px){
+    #navbar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #navlinks{
+        display: flex;
+        gap: 30px;
+    }
+    #navlinks >p{
+        font-size: 1.5rem;
+    }
+    #project{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+        padding: 20px;
+    }
+    #con{
+        width: 100%;
+        position: relative;
+    }
+    #con >img{
+        width: 100%;
+    }
+
+    #con >span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 5px 9px;
+        background-color: black;
+        color: white;
+    }    
+} 
+
+
